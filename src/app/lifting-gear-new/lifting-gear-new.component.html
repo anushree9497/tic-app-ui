@@ -1,0 +1,336 @@
+<div class="container-fluid no-select" >
+  <br>
+  <div class="card shadow-lg border border-sm">
+    <div class="card-body">
+      <div class="row">
+        <h6>Inspection Details</h6>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-2">
+          <label for="client" class="form-label">Client</label>
+          <select class="form-select" id="client" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label for="address" class="form-label">Address</label>
+          <select class="form-select" id="address" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <div class="card shadow-lg border border-sm">
+    <div class="card-body">
+      <div class="row">
+        <h6>Certificate Details</h6>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-2">
+          <label for="dateOfInspection" class="form-label">Date Of Inspection</label>
+          <div class="input-group">
+            <input
+              id="dateOfInspection"
+              class="form-control"
+              placeholder="yyyy-mm-dd"
+              name="dp"
+              [(ngModel)]="model"
+              ngbDatepicker
+              #d="ngbDatepicker"
+            />
+            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+          </div>
+        </div>
+<!--        <div class="col-2">-->
+<!--          <label for="placeOfInspection" class="form-label">Place of Inspection</label>-->
+<!--          <input type="text" class="form-control" id="placeOfInspection">-->
+<!--        </div>-->
+        <div class="col-2">
+          <label for="typeOfExam" class="form-label">Type Of Exam</label>
+          <select class="form-select" id="typeOfExam" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">Test</option>
+            <option value="2">Thorough</option>
+            <option value="3"> Test and Thorough</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label for="area" class="form-label">Area</label>
+          <select class="form-select" id="area" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label for="site" class="form-label">Site</label>
+          <select class="form-select" id="site" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label for="location" class="form-label">Location</label>
+          <select class="form-select" id="location" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label for="surveyor" class="form-label">Surveyor</label>
+          <select class="form-select" id="surveyor" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label for="authority" class="form-label">Authority</label>
+          <select class="form-select" id="authority" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label for="workOrderNo" class="form-label">Work Order No.</label>
+          <input type="text" class="form-control" id="workOrderNo">
+        </div>
+        <div class="col-2">
+          <label for="jobOrderNo" class="form-label">Job Order No.</label>
+          <input type="text" class="form-control" id="jobOrderNo">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="card shadow-lg border border-sm">
+    <div class="card-body">
+      <div class="row">
+        <h6>Equipment Details</h6>
+      </div>
+      <br>
+      <div class="row">
+        <div class="col-2">
+          <label for="category" class="form-label">Category</label>
+          <select class="form-select" id="category" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label for="equipmentNo" class="form-label">Equipment No.</label>
+          <input type="text" class="form-control" id="equipmentNo">
+        </div>
+        <div class="col-2">
+          <label for="title" class="form-label">Title</label>
+          <input type="text" class="form-control" id="title">
+        </div>
+        <div class="col-2">
+          <label for="maker" class="form-label">Manufacturer</label>
+          <input type="text" class="form-control" id="maker">
+        </div>
+<!--        <div class="col-2">-->
+<!--        <label for="registationNo" class="form-label">Registration No.</label>-->
+<!--        <input type="text" class="form-control" id="registationNo">-->
+<!--        </div>-->
+<!--        <div class="col-2">-->
+<!--          <label for="tagNo" class="form-label">Owner ID/Tag No.</label>-->
+<!--          <input type="text" class="form-control" id="tagNo">-->
+<!--        </div>-->
+<!--        <div class="col-2">-->
+<!--          <label for="modelNo" class="form-label">Model No.</label>-->
+<!--          <input type="text" class="form-control" id="modelNo">-->
+<!--        </div>-->
+<!--        <div class="col-2">-->
+<!--          <label for="serialNo" class="form-label">Serial No.</label>-->
+<!--          <input type="text" class="form-control" id="serialNo">-->
+<!--        </div>-->
+        <div class="col-2">
+          <label for="year" class="form-label">Year Of Manufacture</label>
+          <input type="text" class="form-control" id="year">
+        </div>
+        <div class="col-2">
+          <label for="testCertificateNo" class="form-label">Test Certificate No./COC No.</label>
+          <input type="text" class="form-control" id="testCertificateNo">
+        </div>
+        <div class="col-2">
+          <label for="previousCertificateNo" class="form-label">Previous Certificate No.</label>
+          <input type="text" class="form-control" id="previousCertificateNo">
+        </div>
+        <div class="col-2">
+          <label for="standard" class="form-label">Standard</label>
+          <select class="form-select" id="standard" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="col-2">
+          <label for="swl" class="form-label">Safe Working Load / Gross Weight</label>
+          <input type="text" class="form-control" id="swl">
+        </div>
+        <div class="col-2">
+          <label for="proofLoad" class="form-label">Proof Load</label>
+          <input type="text" class="form-control" id="proofLoad">
+        </div>
+        <div class="col-2">
+          <label for="testInspectionFrequency" class="form-label">Test Inspection Frequency</label>
+          <input type="text" class="form-control" id="testInspectionFrequency">
+        </div>
+        <div class="col-2">
+          <label for="thoroughInspectionFrequency" class="form-label">Thorough Inspection Frequency</label>
+          <input type="text" class="form-control" id="thoroughInspectionFrequency">
+        </div>
+        <div class="col-2">
+          <label for="lastTestExam" class="form-label">Last Test Exam</label>
+          <div class="input-group">
+            <input
+              id="lastTestExam"
+              class="form-control"
+              placeholder="yyyy-mm-dd"
+              name="dp"
+              [(ngModel)]="model"
+              ngbDatepicker
+              #d="ngbDatepicker"
+            />
+            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+          </div>
+        </div>
+        <div class="col-2">
+          <label for="nextTestExam" class="form-label">Next Test Exam</label>
+          <div class="input-group">
+            <input
+              id="nextTestExam"
+              class="form-control"
+              placeholder="yyyy-mm-dd"
+              name="dp"
+              [(ngModel)]="model"
+              ngbDatepicker
+              #d="ngbDatepicker"
+            />
+            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+          </div>
+        </div>
+        <div class="col-2">
+          <label for="lastThoroughExam" class="form-label">Last Thorough Exam</label>
+          <div class="input-group">
+            <input
+              id="lastThoroughExam"
+              class="form-control"
+              placeholder="yyyy-mm-dd"
+              name="dp"
+              [(ngModel)]="model"
+              ngbDatepicker
+              #d="ngbDatepicker"
+            />
+            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+          </div>
+        </div>
+        <div class="col-2">
+          <label for="nextThoroughExam" class="form-label">Next Thorough Exam</label>
+          <div class="input-group">
+            <input
+              id="nextThoroughExam"
+              class="form-control"
+              placeholder="yyyy-mm-dd"
+              name="dp"
+              [(ngModel)]="model"
+              ngbDatepicker
+              #d="ngbDatepicker"
+            />
+            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+          </div>
+        </div>
+        <div class="col-3">
+          <label for="result" class="form-label">Result</label>
+          <select class="form-select" id="result" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+      </div>
+      <br>
+      <div class="row">
+        <label class="description">Description</label>
+        <div class="col-12">
+          <quill-editor [styles]="{height: '200px'}"  [(ngModel)]="content" [modules]="modules"></quill-editor>
+          <div>
+            <button class="btn btn-dark" (click)="submit()">Add to list</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <br>
+  <div class="card shadow-lg border border-sm">
+    <div class="card-body">
+<!--      <app-table-display></app-table-display>-->
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Client</th>
+            <th scope="col">Location</th>
+            <th scope="col">Date of Inspection</th>
+            <th scope="col">Type of Exam</th>
+            <th scope="col">Category</th>
+            <th scope="col">Equipment No.</th>
+            <th scope="col">Title</th>
+            <th scope="col">SWL</th>
+            <th scope="col">Proof Load</th>
+            <th scope="col">Next Test Exam</th>
+            <th scope="col">Next Thorough Exam</th>
+            <th scope="col">Result</th>
+          </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+  <br>
+  <div class="row justify-content-end">
+    <div class="col-auto">
+      <button class="btn btn-dark" (click)="submit()">Submit</button>
+    </div>
+    <div class="col-auto">
+      <button class="btn btn-dark">Clear</button>
+    </div>
+  </div>
+
+
+</div>

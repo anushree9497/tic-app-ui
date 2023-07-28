@@ -1,0 +1,20 @@
+.container-fluid{
+  font-size:small;
+}
+
+
+.no-select {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
+.col-2 ,.col-3{
+  padding-top: 10px
+}
+
+.description{
+  padding-bottom: 10px;
+}
