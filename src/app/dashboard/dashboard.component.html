@@ -1,0 +1,208 @@
+<div class="container-fluid">
+  <br><br>
+  <div class="row">
+    <div class="col-3">
+      <div class="card shadow-lg border border-light">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-5">
+              <img src="assets/images/tools.png" width="80%">
+            </div>
+            <div class="col-7">
+              <div class="row">
+                <h1>1220</h1>
+              </div>
+              <div class="row">
+                <h6>EQUIPMENTS</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card shadow-lg border border-light">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-5">
+              <img src="assets/images/certificate.png" width="80%">
+            </div>
+            <div class="col-7">
+              <div class="row">
+                <h1>1022</h1>
+              </div>
+              <div class="row">
+                <h6>CERTIFICATES</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card shadow-lg border border-light">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-5">
+              <img src="assets/images/expired.png" width="80%">
+            </div>
+            <div class="col-7">
+              <div class="row">
+                <h1>102</h1>
+              </div>
+              <div class="row">
+                <h6>EXPIRED</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-3">
+      <div class="card shadow-lg border border-light">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-5">
+              <img src="assets/images/client.png" width="80%">
+            </div>
+            <div class="col-7">
+              <div class="row">
+                <h1>3111</h1>
+              </div>
+              <div class="row">
+                <h6>CLIENTS</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!--  Equipment stats-->
+  <br><br>
+  <h6>EQUIPMENT STATISTICS</h6>
+  <br>
+  <div class="row">
+    <div class="col-4">
+      <div class="card shadow-lg border border-sm">
+        <div class="card-body">
+          <app-donut-pie-chart [seriesValues]="[1222, 5, 13]" [seriesLabels]="['Certified', 'Rejected', 'Expired']" [seriesColors]="['#58cf04','#f20511','#f2cf05']"></app-donut-pie-chart>
+        </div>
+      </div>
+    </div>
+    <div class="col-8">
+     <div class="card shadow-lg border border-sm">
+       <div class="card-body">
+         <app-stacked-column-chart [seriesDetails]="[
+        {
+          name: 'Certified',
+         data: [44, 55, 41, 67, 22, 43]
+         },
+         {
+         name: 'Rejected',
+         data: [13, 23, 20, 8, 13, 27]
+         },
+         {
+         name: 'Expired',
+         data: [10, 13, 10, 8, 3, 7]
+         }
+         ]"  [xAxisValues]='[
+          "01/2011",
+         "02/2011",
+         "03/2011",
+         "04/2011",
+         "05/2011",
+         "06/2011"
+         ]'></app-stacked-column-chart>
+       </div>
+     </div>
+    </div>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-4">
+      <div class="card shadow-lg border border-sm">
+        <div class="card-body">
+          <app-donut-pie-chart [seriesValues]="[55, 5]" [seriesLabels]="['Lifting Gear', 'Lifting Equipment']" [seriesColors]="['#4592f7','#b64af0','#f2cf05']"></app-donut-pie-chart>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card shadow-lg border border-sm">
+        <div class="card-body">
+          <app-donut-pie-chart [seriesValues]="[55, 5, 2]" [seriesLabels]="['Certified', 'Rejected', 'Approved']" [seriesColors]="['#58cf04','#f20511','#f2cf05']"></app-donut-pie-chart>
+        </div>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="card shadow-lg border border-sm">
+        <div class="card-body">
+          <app-donut-pie-chart [seriesValues]="[55, 5, 1]" [seriesLabels]="['Certified', 'Rejected', 'Approved']" [seriesColors]="['#58cf04','#f20511','#f2cf05']"></app-donut-pie-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+<br><br>
+  <div class="row">
+    <div class="col-6">
+      <div class="card shadow-lg border border-sm">
+        <div class="card-body">
+          <app-stacked-column-chart [seriesDetails]="[
+        {
+          name: 'Certified',
+         data: [44, 55, 41, 67, 22, 43]
+         },
+         {
+         name: 'Rejected',
+         data: [13, 23, 20, 8, 13, 27]
+         },
+         {
+         name: 'Expired',
+         data: [10, 13, 10, 8, 3, 7]
+         }
+         ]"  [xAxisValues]='[
+          "01/2011",
+         "02/2011",
+         "03/2011",
+         "04/2011",
+         "05/2011",
+         "06/2011"
+         ]'></app-stacked-column-chart>
+        </div>
+      </div>
+    </div>
+    <div class="col-6">
+      <div class="card shadow-lg border border-sm">
+        <div class="card-body">
+          <app-stacked-column-chart [seriesDetails]="[
+        {
+          name: 'Certified',
+         data: [44, 55, 41, 67, 22, 43]
+         },
+         {
+         name: 'Rejected',
+         data: [13, 23, 20, 8, 13, 27]
+         },
+         {
+         name: 'Expired',
+         data: [10, 13, 10, 8, 3, 7]
+         }
+         ]"  [xAxisValues]='[
+          "01/2011",
+         "02/2011",
+         "03/2011",
+         "04/2011",
+         "05/2011",
+         "06/2011"
+         ]'></app-stacked-column-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-4">
+      <app-line-chart></app-line-chart>
+    </div>
+  </div>
+</div>

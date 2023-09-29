@@ -9,6 +9,9 @@ import { LiftingGearUpdateComponent } from './lifting-gear-update/lifting-gear-u
 import { LiftingGearSearchComponent } from './lifting-gear-search/lifting-gear-search.component';
 import { AuthComponent } from './auth/auth.component';
 import { HomeComponent } from './home/home.component';
+import { CallbackComponent } from './callback/callback.component';
+import { CustomTemplateComponent } from './custom-template/custom-template.component';
+import { DownloadDocumentComponent } from './download-document/download-document.component';
 
 const routes: Routes = [
   {path:'login',component: LoginComponent},
@@ -20,7 +23,10 @@ const routes: Routes = [
   {path: 'gear-search', component:LiftingGearSearchComponent },
   {path: 'auth', component: AuthComponent },
   { path: 'authorized', redirectTo: "auth", pathMatch: 'full'},
-  {path: 'home', component:HomeComponent}
+  {path: 'home', component:HomeComponent},
+  {path:'callback', component:CallbackComponent},
+  {path:'custom', component:CustomTemplateComponent},
+  {path: 'download', component: DownloadDocumentComponent }
 ];
 
 @NgModule({

@@ -13,8 +13,8 @@ export class AuthService {
     }
 
     getToken(){
-        const mockUserClient = 'client';
-        const mockUserSecret = 'secret';
+        const mockUserClient = 'oidc-client';
+        const mockUserSecret = 'xyz';
         const basicAuth = `Basic ` + Buffer.from(`${mockUserClient}:${mockUserSecret}`).toString('base64');
         const headers = new HttpHeaders({
           'content-type': 'application/json',

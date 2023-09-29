@@ -18,3 +18,21 @@
 .description{
   padding-bottom: 10px;
 }
+
+
+.input-row {
+  display: flex;
+  align-items: center;
+}
+
+.id-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+input {
+  flex: 1;
+  margin-right: 10px;
+}
+

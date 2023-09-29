@@ -1,292 +1,330 @@
 <div class="container-fluid no-select" >
-  <br>
-  <div class="card shadow-lg border border-sm">
-    <div class="card-body">
-      <div class="row">
-        <h6>Inspection Details</h6>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-2">
-          <label for="client" class="form-label">Client</label>
-          <select class="form-select" id="client" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="col-2">
-          <label for="address" class="form-label">Address</label>
-          <select class="form-select" id="address" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-      </div>
-    </div>
-  </div>
+<!--  <form [formGroup]="liftingGearForm" (ngSubmit)="onsubmit()">-->
 
 
-  <br>
-  <div class="card shadow-lg border border-sm">
-    <div class="card-body">
-      <div class="row">
-        <h6>Certificate Details</h6>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-2">
-          <label for="dateOfInspection" class="form-label">Date Of Inspection</label>
-          <div class="input-group">
-            <input
-              id="dateOfInspection"
-              class="form-control"
-              placeholder="yyyy-mm-dd"
-              name="dp"
-              [(ngModel)]="model"
-              ngbDatepicker
-              #d="ngbDatepicker"
-            />
-            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
-          </div>
-        </div>
-<!--        <div class="col-2">-->
-<!--          <label for="placeOfInspection" class="form-label">Place of Inspection</label>-->
-<!--          <input type="text" class="form-control" id="placeOfInspection">-->
-<!--        </div>-->
-        <div class="col-2">
-          <label for="typeOfExam" class="form-label">Type Of Exam</label>
-          <select class="form-select" id="typeOfExam" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">Test</option>
-            <option value="2">Thorough</option>
-            <option value="3"> Test and Thorough</option>
-          </select>
-        </div>
-        <div class="col-2">
-          <label for="area" class="form-label">Area</label>
-          <select class="form-select" id="area" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="col-2">
-          <label for="site" class="form-label">Site</label>
-          <select class="form-select" id="site" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="col-2">
-          <label for="location" class="form-label">Location</label>
-          <select class="form-select" id="location" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="col-2">
-          <label for="surveyor" class="form-label">Surveyor</label>
-          <select class="form-select" id="surveyor" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="col-2">
-          <label for="authority" class="form-label">Authority</label>
-          <select class="form-select" id="authority" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="col-2">
-          <label for="workOrderNo" class="form-label">Work Order No.</label>
-          <input type="text" class="form-control" id="workOrderNo">
-        </div>
-        <div class="col-2">
-          <label for="jobOrderNo" class="form-label">Job Order No.</label>
-          <input type="text" class="form-control" id="jobOrderNo">
-        </div>
-      </div>
-    </div>
-  </div>
+<!--    <button type="submit" [disabled]="!liftingGearForm.valid">Submit</button>-->
+<!--  </form>-->
 
   <br>
-  <div class="card shadow-lg border border-sm">
-    <div class="card-body">
-      <div class="row">
-        <h6>Equipment Details</h6>
-      </div>
-      <br>
-      <div class="row">
-        <div class="col-2">
-          <label for="category" class="form-label">Category</label>
-          <select class="form-select" id="category" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
+  <form [formGroup]="liftingGearForm" (ngSubmit)="onSubmit()">
+    <div class="card shadow-lg border border-sm">
+      <div class="card-body">
+        <div class="row">
+          <h6>Inspection Details</h6>
         </div>
-        <div class="col-2">
-          <label for="equipmentNo" class="form-label">Equipment No.</label>
-          <input type="text" class="form-control" id="equipmentNo">
-        </div>
-        <div class="col-2">
-          <label for="title" class="form-label">Title</label>
-          <input type="text" class="form-control" id="title">
-        </div>
-        <div class="col-2">
-          <label for="maker" class="form-label">Manufacturer</label>
-          <input type="text" class="form-control" id="maker">
-        </div>
-<!--        <div class="col-2">-->
-<!--        <label for="registationNo" class="form-label">Registration No.</label>-->
-<!--        <input type="text" class="form-control" id="registationNo">-->
-<!--        </div>-->
-<!--        <div class="col-2">-->
-<!--          <label for="tagNo" class="form-label">Owner ID/Tag No.</label>-->
-<!--          <input type="text" class="form-control" id="tagNo">-->
-<!--        </div>-->
-<!--        <div class="col-2">-->
-<!--          <label for="modelNo" class="form-label">Model No.</label>-->
-<!--          <input type="text" class="form-control" id="modelNo">-->
-<!--        </div>-->
-<!--        <div class="col-2">-->
-<!--          <label for="serialNo" class="form-label">Serial No.</label>-->
-<!--          <input type="text" class="form-control" id="serialNo">-->
-<!--        </div>-->
-        <div class="col-2">
-          <label for="year" class="form-label">Year Of Manufacture</label>
-          <input type="text" class="form-control" id="year">
-        </div>
-        <div class="col-2">
-          <label for="testCertificateNo" class="form-label">Test Certificate No./COC No.</label>
-          <input type="text" class="form-control" id="testCertificateNo">
-        </div>
-        <div class="col-2">
-          <label for="previousCertificateNo" class="form-label">Previous Certificate No.</label>
-          <input type="text" class="form-control" id="previousCertificateNo">
-        </div>
-        <div class="col-2">
-          <label for="standard" class="form-label">Standard</label>
-          <select class="form-select" id="standard" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-        <div class="col-2">
-          <label for="swl" class="form-label">Safe Working Load / Gross Weight</label>
-          <input type="text" class="form-control" id="swl">
-        </div>
-        <div class="col-2">
-          <label for="proofLoad" class="form-label">Proof Load</label>
-          <input type="text" class="form-control" id="proofLoad">
-        </div>
-        <div class="col-2">
-          <label for="testInspectionFrequency" class="form-label">Test Inspection Frequency</label>
-          <input type="text" class="form-control" id="testInspectionFrequency">
-        </div>
-        <div class="col-2">
-          <label for="thoroughInspectionFrequency" class="form-label">Thorough Inspection Frequency</label>
-          <input type="text" class="form-control" id="thoroughInspectionFrequency">
-        </div>
-        <div class="col-2">
-          <label for="lastTestExam" class="form-label">Last Test Exam</label>
-          <div class="input-group">
-            <input
-              id="lastTestExam"
-              class="form-control"
-              placeholder="yyyy-mm-dd"
-              name="dp"
-              [(ngModel)]="model"
-              ngbDatepicker
-              #d="ngbDatepicker"
-            />
-            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+        <br>
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <label for="client" class="form-label">Client</label>
+              <select class="form-select" id="client" aria-label="Default select example" formControlName="client">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
           </div>
-        </div>
-        <div class="col-2">
-          <label for="nextTestExam" class="form-label">Next Test Exam</label>
-          <div class="input-group">
-            <input
-              id="nextTestExam"
-              class="form-control"
-              placeholder="yyyy-mm-dd"
-              name="dp"
-              [(ngModel)]="model"
-              ngbDatepicker
-              #d="ngbDatepicker"
-            />
-            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
-          </div>
-        </div>
-        <div class="col-2">
-          <label for="lastThoroughExam" class="form-label">Last Thorough Exam</label>
-          <div class="input-group">
-            <input
-              id="lastThoroughExam"
-              class="form-control"
-              placeholder="yyyy-mm-dd"
-              name="dp"
-              [(ngModel)]="model"
-              ngbDatepicker
-              #d="ngbDatepicker"
-            />
-            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
-          </div>
-        </div>
-        <div class="col-2">
-          <label for="nextThoroughExam" class="form-label">Next Thorough Exam</label>
-          <div class="input-group">
-            <input
-              id="nextThoroughExam"
-              class="form-control"
-              placeholder="yyyy-mm-dd"
-              name="dp"
-              [(ngModel)]="model"
-              ngbDatepicker
-              #d="ngbDatepicker"
-            />
-            <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
-          </div>
-        </div>
-        <div class="col-3">
-          <label for="result" class="form-label">Result</label>
-          <select class="form-select" id="result" aria-label="Default select example">
-            <option selected></option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-        </div>
-      </div>
-      <br>
-      <div class="row">
-        <label class="description">Description</label>
-        <div class="col-12">
-          <quill-editor [styles]="{height: '200px'}"  [(ngModel)]="content" [modules]="modules"></quill-editor>
-          <div>
-            <button class="btn btn-dark" (click)="submit()">Add to list</button>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="address" class="form-label">Address</label>
+              <select class="form-select" id="address" aria-label="Default select example" formControlName="address">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
+
+
+    <br>
+    <div class="card shadow-lg border border-sm">
+      <div class="card-body">
+        <div class="row">
+          <h6>Certificate Details</h6>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <label for="dateOfInspection" class="form-label">Date Of Inspection</label>
+              <div class="input-group">
+                <input
+                  id="dateOfInspection"
+                  class="form-control"
+                  placeholder="yyyy-mm-dd"
+                  name="dateOfInspection"
+                  ngbDatepicker
+                  #d="ngbDatepicker"
+                  formControlName="dateOfInspection"
+                />
+                <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="typeOfExam" class="form-label">Type Of Exam</label>
+              <select class="form-select" id="typeOfExam" aria-label="Default select example" formControlName="typeOfExam">
+                <option selected></option>
+                <option value="1">Test</option>
+                <option value="2">Thorough</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="placeOfInspection" class="form-label">Place of Inspection</label>
+              <select class="form-select" id="placeOfInspection" aria-label="Default select example" formControlName="placeOfInspection">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="surveyor" class="form-label">Surveyor</label>
+              <select class="form-select" id="surveyor" aria-label="Default select example" formControlName="surveyor">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="authority" class="form-label">Authority</label>
+              <select class="form-select" id="authority" aria-label="Default select example" formControlName="authority">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <div class="card shadow-lg border border-sm">
+      <div class="card-body">
+        <div class="row">
+          <h6>Equipment Details</h6>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <label for="category" class="form-label">Category</label>
+              <select class="form-select" id="category" aria-label="Default select example" formControlName="category">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+<!--          <div class="col-2">-->
+<!--            <div class="form-group">-->
+<!--              <label for="quantity" class="form-label">Enter Quantity:</label>-->
+<!--              <input type="number" class="form-control" id="quantity" formControlName="quantity" (ngModelChange)="onQuantityChange()" >-->
+<!--            </div>-->
+<!--          </div>-->
+
+<!--          <div class="col-2 border">-->
+<!--            <div formArrayName="ids">-->
+<!--              <div *ngFor="let id of idControls.controls; let i = index" class="form-group">-->
+<!--                <label [for]="'id' + i" class="form-label">Equipment ID {{ i + 1 }}:</label>-->
+<!--                <input type="text" [id]="'id' + i" [formControlName]="i" class="form-control" />-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+          <div class="col-4">
+            <div class="form-group">
+              <label for="idInput" class="form-label">Equipment IDs</label>
+              <div class="input-row">
+                <input type="text" class="form-control" formControlName="idInput" id="idInput">
+                <button type="button" class="btn btn-primary" (click)="addId(liftingGearForm.get('idInput')?.value)"
+                        [disabled]="liftingGearForm.get('idInput')?.value === '' || liftingGearForm.get('idInput')?.value === null || addedIds.has(liftingGearForm.get('idInput')?.value) || idArray.length >= 25">Add</button>
+              </div>
+            </div>
+            <div formArrayName="ids" class="id-row">
+              <div *ngFor="let idControl of idArray.controls; let i = index">
+                {{ idControl.value }}
+                <i class="fa-solid fa-circle-xmark" style="color: #000000;" (click)="removeId(i)" style="cursor:pointer; padding-right:10px"></i>
+              </div>
+            </div>
+          </div>
+
+<!--          <div class="col-2">-->
+<!--            <div class="form-group">-->
+<!--              <label for="equipmentNo" class="form-label">Equipment No.</label>-->
+<!--              <input type="text" class="form-control" id="equipmentNo" formControlName="equipmentNo">-->
+<!--            </div>-->
+<!--          </div>-->
+          <div class="col-2">
+            <div class="form-group">
+              <label for="manufacturer" class="form-label">Manufacturer</label>
+              <input type="text" class="form-control" id="manufacturer" formControlName="manufacturer">
+            </div>
+          </div>
+<!--          <div class="col-2">-->
+<!--            <div class="form-group">-->
+<!--              <label for="yearOfManufacture" class="form-label">Year Of Manufacture</label>-->
+<!--              <input type="text" class="form-control" id="yearOfManufacture" formControlName="yearOfManufacture">-->
+<!--            </div>-->
+<!--          </div>-->
+          <div class="col-2">
+            <div class="form-group">
+              <label for="testCertificateNo" class="form-label">Test Certificate No./COC No.</label>
+              <input type="text" class="form-control" id="testCertificateNo" formControlName="testCertificateNo">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="previousCertificateNo" class="form-label">Previous Certificate No.</label>
+              <input type="text" class="form-control" id="previousCertificateNo" formControlName="previousCertificateNo">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="standard" class="form-label">Standard</label>
+              <select class="form-select" id="standard" aria-label="Default select example" formControlName="standard">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="safeWorkingLoad" class="form-label">Safe Working Load / Gross Weight</label>
+              <input type="text" class="form-control" id="safeWorkingLoad" formControlName="safeWorkingLoad">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="proofLoad" class="form-label">Proof Load</label>
+              <input type="text" class="form-control" id="proofLoad" formControlName="proofLoad">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="testInspectionFrequency" class="form-label">Test Inspection Frequency</label>
+              <input type="text" class="form-control" id="testInspectionFrequency" formControlName="testInspectionFrequency">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="thoroughInspectionFrequency" class="form-label">Thorough Inspection Frequency</label>
+              <input type="text" class="form-control" id="thoroughInspectionFrequency" formControlName="thoroughInspectionFrequency">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="lastTestExam" class="form-label">Last Test Exam</label>
+              <div class="input-group">
+                <input
+                  id="lastTestExam"
+                  class="form-control"
+                  placeholder="yyyy-mm-dd"
+                  name="lastTestExam"
+                  ngbDatepicker
+                  #d="ngbDatepicker"
+                  formControlName="lastTestExam"
+                />
+                <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="nextTestExam" class="form-label">Next Test Exam</label>
+              <div class="input-group">
+                <input
+                  id="nextTestExam"
+                  class="form-control"
+                  placeholder="yyyy-mm-dd"
+                  name="nextTestExam"
+                  ngbDatepicker
+                  #d="ngbDatepicker"
+                  formControlName="nextTestExam"
+                />
+                <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="lastThoroughExam" class="form-label">Last Thorough Exam</label>
+              <div class="input-group">
+                <input
+                  id="lastThoroughExam"
+                  class="form-control"
+                  placeholder="yyyy-mm-dd"
+                  name="lastThoroughExam"
+                  ngbDatepicker
+                  #d="ngbDatepicker"
+                  formControlName="lastThoroughExam"
+                />
+                <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="nextThoroughExam" class="form-label">Next Thorough Exam</label>
+              <div class="input-group">
+                <input
+                  id="nextThoroughExam"
+                  class="form-control"
+                  placeholder="yyyy-mm-dd"
+                  name="nextThoroughExam"
+                  ngbDatepicker
+                  #d="ngbDatepicker"
+                  formControlName="nextThoroughExam"
+                />
+                <button class="btn btn-outline-secondary bi bi-calendar3" (click)="d.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="form-group">
+              <label for="result" class="form-label">Result</label>
+              <select class="form-select" id="result" aria-label="Default select example" formControlName="result">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="form-group">
+            <label class="description">Description</label>
+            <div class="col-12">
+              <quill-editor [styles]="{height: '200px'}"  id="description" [(ngModel)]="content" [modules]="modules" formControlName="description"></quill-editor>
+            </div>
+                    <div>
+                      <button class="btn btn-dark" (click)="openPDF()">Add to list</button>
+                    </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </form>
 
 
   <br>
@@ -325,7 +363,7 @@
   <br>
   <div class="row justify-content-end">
     <div class="col-auto">
-      <button class="btn btn-dark" (click)="submit()">Submit</button>
+      <button class="btn btn-dark" (click)="generatePDF()">Submit</button>
     </div>
     <div class="col-auto">
       <button class="btn btn-dark">Clear</button>

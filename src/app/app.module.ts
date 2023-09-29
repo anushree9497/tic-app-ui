@@ -6,7 +6,10 @@ import { QuillModule } from 'ngx-quill';
 import { AgGridModule } from 'ag-grid-angular';
 import {HttpClientModule} from '@angular/common/http'
 import { AppRoutingModule } from './app-routing.module';
+
 import { AppComponent } from './app.component';
+
+
 import { LoginComponent } from './login/login.component';
 import { FrontPageComponent } from './front-page/front-page.component';
 import { LiftingGearComponent } from './lifting-gear/lifting-gear.component';
@@ -26,6 +29,10 @@ import { LiftingGearSearchComponent } from './lifting-gear-search/lifting-gear-s
 import { ButtonRendererComponent } from './button-renderer/button-renderer.component';
 import { AuthComponent } from './auth/auth.component';
 import { HomeComponent } from './home/home.component';
+import { CallbackComponent } from './callback/callback.component';
+import { CustomTemplateComponent } from './custom-template/custom-template.component';
+import { DownloadDocumentComponent } from './download-document/download-document.component';
+
 
 @NgModule({
   declarations: [
@@ -46,7 +53,10 @@ import { HomeComponent } from './home/home.component';
     LiftingGearSearchComponent,
     ButtonRendererComponent,
     AuthComponent,
-    HomeComponent
+    HomeComponent,
+    CallbackComponent,
+    CustomTemplateComponent,
+    DownloadDocumentComponent
 
   ],
   imports: [

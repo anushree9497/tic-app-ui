@@ -1,0 +1,201 @@
+<!--<app-typeahead></app-typeahead>-->
+<!--<app-table-display></app-table-display>-->
+
+
+<div class="container-fluid no-select" >
+  <br>
+  <br>
+  <div class="row">
+    <h6>Search Inspection Details</h6>
+  </div>
+  <br>
+    <div class="card shadow-lg border border-sm">
+      <div class="card-body">
+        <br>
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <label for="client" class="form-label">Client</label>
+              <select class="form-select" id="client" aria-label="Default select example" formControlName="client">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <h6>Certificate Details</h6>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <label for="testCertificateNo" class="form-label">Certificate ID</label>
+              <input type="text" class="form-control" id="testCertificateNo" formControlName="testCertificateNo">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="typeOfExam" class="form-label">Type Of Exam</label>
+              <select class="form-select" id="typeOfExam" aria-label="Default select example" formControlName="typeOfExam">
+                <option selected></option>
+                <option value="1">Test</option>
+                <option value="2">Thorough</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="placeOfInspection" class="form-label">Place of Inspection</label>
+              <select class="form-select" id="placeOfInspection" aria-label="Default select example" formControlName="placeOfInspection">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="surveyor" class="form-label">Surveyor</label>
+              <select class="form-select" id="surveyor" aria-label="Default select example" formControlName="surveyor">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="authority" class="form-label">Authority</label>
+              <select class="form-select" id="authority" aria-label="Default select example" formControlName="authority">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <h6>Equipment Details</h6>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-2">
+            <div class="form-group">
+              <label for="category" class="form-label">Category</label>
+              <select class="form-select" id="category" aria-label="Default select example" formControlName="category">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <!--          <div class="col-2">-->
+          <!--            <div class="form-group">-->
+          <!--              <label for="quantity" class="form-label">Enter Quantity:</label>-->
+          <!--              <input type="number" class="form-control" id="quantity" formControlName="quantity" (ngModelChange)="onQuantityChange()" >-->
+          <!--            </div>-->
+          <!--          </div>-->
+
+          <!--          <div class="col-2 border">-->
+          <!--            <div formArrayName="ids">-->
+          <!--              <div *ngFor="let id of idControls.controls; let i = index" class="form-group">-->
+          <!--                <label [for]="'id' + i" class="form-label">Equipment ID {{ i + 1 }}:</label>-->
+          <!--                <input type="text" [id]="'id' + i" [formControlName]="i" class="form-control" />-->
+          <!--              </div>-->
+          <!--            </div>-->
+          <!--          </div>-->
+          <div class="col-2">
+            <div class="form-group">
+              <label for="testCertificateNo" class="form-label">Test Certificate No./COC No.</label>
+              <input type="text" class="form-control" id="testCertificateNo" formControlName="testCertificateNo">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="previousCertificateNo" class="form-label">Previous Certificate No.</label>
+              <input type="text" class="form-control" id="previousCertificateNo" formControlName="previousCertificateNo">
+            </div>
+          </div>
+          <div class="col-2">
+            <div class="form-group">
+              <label for="standard" class="form-label">Standard</label>
+              <select class="form-select" id="standard" aria-label="Default select example" formControlName="standard">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="form-group">
+              <label for="result" class="form-label">Result</label>
+              <select class="form-select" id="result" aria-label="Default select example" formControlName="result">
+                <option selected></option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row justify-content-end">
+          <div class="col-auto">
+            <button class="btn btn-dark">Submit</button>
+          </div>
+          <div class="col-auto">
+            <button class="btn btn-dark">Clear</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <br>
+  <div class="card shadow-lg border border-sm">
+    <div class="card-body">
+      <!--      <app-table-display></app-table-display>-->
+      <div class="table-responsive">
+        <table class="table table-striped">
+          <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Client</th>
+            <th scope="col">Location</th>
+            <th scope="col">Date of Inspection</th>
+            <th scope="col">Type of Exam</th>
+            <th scope="col">Category</th>
+            <th scope="col">Equipment No.</th>
+            <th scope="col">Title</th>
+            <th scope="col">SWL</th>
+            <th scope="col">Proof Load</th>
+            <th scope="col">Next Test Exam</th>
+            <th scope="col">Next Thorough Exam</th>
+            <th scope="col">Result</th>
+          </tr>
+          </thead>
+          <tbody>
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+</div>
+

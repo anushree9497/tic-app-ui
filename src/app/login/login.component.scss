@@ -1,0 +1,40 @@
+.container {
+  padding-top:10vh;
+  padding-bottom:10vh;
+  padding-left:20vh;
+  padding-right:20vh;
+}
+
+.transparent-button {
+    background: linear-gradient( #5f8f5b, #94d194);
+    border: none;
+    cursor: pointer;
+    color:white
+  }
+
+  /* Example hover effect */
+  .transparent-button:hover {
+    background: linear-gradient( #defcde, #f7faf7);
+    color: black;
+    text-decoration: underline; /* Underline on hover */
+  }
+
+
+
+// input{
+//   margin-top: 0.5rem;
+//   margin-bottom: 1rem
+// }
+// .input-width{
+//   width:400px
+// }
+//
+// label{
+//   font-weight: bold;
+//   font-size: small
+// }
+//
+// .error{
+//   font-size: small;
+//   color: red;
+// }
